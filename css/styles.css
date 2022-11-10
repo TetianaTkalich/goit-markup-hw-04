@@ -194,6 +194,23 @@ ul {
     fill: var(--accent-color);
 }
 
+.contacts .link{
+    display: block;
+    padding-top: 32px;
+    padding-bottom: 32px;
+    color: var(--secondary-white-color);
+    font-weight: 500;
+    font-size: 14px;
+    line-height: calc(16/14);
+    letter-spacing: 0.02em;
+}
+.contacts .link:hover,
+.contacts .link:focus{
+    color: var(--accent-color);
+}
+
+
+
 /*section-title*/
 .section-title {
     background-color: #2F303A;
@@ -405,7 +422,7 @@ margin-right: 8px;
     padding-left: 0;
 }
 
-.social-link {
+.social-link  {
     width: 44px;
     height: 44px;
     justify-content: center;
@@ -416,12 +433,21 @@ margin-right: 8px;
     border-radius: 50%;
 }
 
+.social-link {
+    width: 44px;
+    height: 44px;
+
+}
+.social-link:hover{
+    color: var(--primary-white-color);
+}
+
 .social-icons .social-link:hover{
     background-color: var(--accent-color);
 }
 
 .social-icons .social-link:hover .icon{
-    fill: var(--secondary-white-color);
+    fill:currentColor;
 }
 
 .staff-gallery .social-link {
@@ -490,6 +516,7 @@ margin-right: 8px;
 
 .clients {
     padding: 94px 215px;
+    background: #F5F4FA;
 }
 
 .brends{
@@ -497,7 +524,7 @@ margin-right: 8px;
     
 }
 
-.brends .item {
+.clients-link {
     border: 1pv solid var(--social-color);
     border-radius: 4px;
 }
@@ -506,8 +533,12 @@ margin-right: 8px;
     margin-right: 30px;
 }
 
+.clients-list.icon{
+    fill: currentColor;
+}
+
 .clients-list:hover .icon,
-.clients-list:focus.icon{
+.clients-list:focus .icon{
     fill: var(--accent-color);
 }
 
@@ -672,8 +703,10 @@ margin-right: 8px;
 
 }
 
-
-
 .padding {
     padding: 90px 0;
 }
+ 
+.card:hover{
+box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06), 0px 4px 6px rgba(0, 0, 0, 0.16);;
+} 
