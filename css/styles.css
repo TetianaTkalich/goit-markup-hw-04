@@ -100,14 +100,9 @@ ul {
     color: var(--accent-color);
 }
 
-.header-mail:hover,
-.header-mail:focus {
-    color: var(--accent-color)
-}
 
-.header-tel:hover,
-.header-tel:focus {
-    color: var(--accent-color)
+.header-tel .phone{
+    fill: currentColor;
 }
 
 .active {
@@ -190,10 +185,6 @@ ul {
     vertical-align: middle;
 }
 
-.phone-link:hover .phone{
-    fill: var(--accent-color);
-}
-
 .contacts .link{
     display: block;
     padding-top: 32px;
@@ -209,6 +200,9 @@ ul {
     color: var(--accent-color);
 }
 
+.phone {
+    fill: currentColor;
+}
 
 
 /*section-title*/
@@ -289,7 +283,7 @@ ul {
 
 /* Наші послуги у портфоліо*/
 
-button.projects-button {    
+.button.projects-button {    
     padding: 6px 22px;
     border: 0;
     cursor: pointer;
@@ -301,6 +295,12 @@ button.projects-button {
     border: none;
     
     
+}
+
+.button.projects-button:hover,
+.button.projects-button:focus
+{
+    filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
 }
 
 .buttons {
@@ -423,8 +423,6 @@ margin-right: 8px;
 }
 
 .social-link  {
-    width: 44px;
-    height: 44px;
     justify-content: center;
     display: flex;
     align-items: center;
@@ -433,11 +431,11 @@ margin-right: 8px;
     border-radius: 50%;
 }
 
-.social-link {
+.social-icon-footer {
     width: 44px;
     height: 44px;
-
 }
+
 .social-link:hover{
     color: var(--primary-white-color);
 }
@@ -453,7 +451,9 @@ margin-right: 8px;
 .staff-gallery .social-link {
     width: 100%;
     height: 100%;
-    display: inline-block;
+    justify-content: center;
+    display: flex;
+    align-items: center;
 }
 
 .staff-gallery .social-icons {
@@ -516,7 +516,7 @@ margin-right: 8px;
 
 .clients {
     padding: 94px 215px;
-    background: #F5F4FA;
+    background: var(--primary-text-color);
 }
 
 .brends{
@@ -527,6 +527,11 @@ margin-right: 8px;
 .clients-link {
     border: 1pv solid var(--social-color);
     border-radius: 4px;
+}
+
+.brends .item {
+border: 1px solid var(--social-color);
+border-radius: 4px;
 }
 
 .brends .item:not(:last-child){
@@ -612,7 +617,7 @@ margin-right: 8px;
  }
 
 .social-footer .icon{
-    fill: var(--secondary-white-color);
+    fill: currentColor
 }
 
 .footer-title{
@@ -621,7 +626,7 @@ margin-right: 8px;
     font-size: 14px;
     line-height: calc(16/14);
     text-transform: uppercase;
-    color: var(--secondary-white-color);
+    color: var(--primary-text-color);
 }
     .social-footer .social-icons {
         margin: 0;
@@ -638,11 +643,11 @@ margin-right: 8px;
         display: flex;
     }
     
-.a {
+   .social-icon-footer {
     display: flex;
     align-items: center;
     justify-content: center;
-}
+    }
 
 
 .footer-contacts .address{
@@ -678,6 +683,7 @@ margin-right: 8px;
 }
 
 .card {
+    display: block;
     text-decoration: none;
 }
 
