@@ -436,16 +436,24 @@ margin-right: 8px;
     height: 44px;
 }
 
-.social-link:hover{
-    color: var(--primary-white-color);
+.social-item .social-link{
+    fill: var(--primary-white-color);
+    
 }
 
-.social-icons .social-link:hover{
+.social-icons .social-link:hover,
+.social-icons .social-link:focus{
     background-color: var(--accent-color);
 }
 
-.social-icons .social-link:hover .icon{
-    fill:currentColor;
+.social-link:hover,
+.social-link:focus {
+    color: var(--primary-white-color);
+
+}
+
+.staff-title .social-icon{
+    fill: currentColor;
 }
 
 .staff-gallery .social-link {
@@ -606,9 +614,6 @@ border-radius: 4px;
     padding-left: 0;
 }
 
-.all-contacts>li {
-    margin-top: 10px;
-}
 
 .adress .all-contacts {
     text-align: inherit;
