@@ -465,8 +465,7 @@ margin-right: 8px;
 }
 
 .staff-gallery .social-icons {
-    margin: 16px 12px 0px 12px;
-    gap: 10px;
+    margin: 16px 12px 0px 12px;    
     display: flex;
     justify-content: center;
     
@@ -548,21 +547,16 @@ margin-right: 8px;
 }
 
 .brends .item {
-border: 1px solid var(--social-color);
-border-radius: 4px;
+    border-radius: 4px;
 }
 
 .brends .item:not(:last-child){
     margin-right: 30px;
 }
 
-.brends .clients-link{
-    color: var(--social-color);
-    text-decoration: none;
-}
 
-.clients-link.icon{
-    fill: currentColor
+.clients-list .icon{
+    fill: var(--social-color)
 }
 
 .clients-list .clients-link:hover,
