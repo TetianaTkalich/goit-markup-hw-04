@@ -210,7 +210,6 @@ ul {
     background-color: #2F303A;
     padding: 200px 0;
     text-align: center;
-    width: 1600px;
     margin-left: auto;
     margin-right: auto;
 }
@@ -527,7 +526,7 @@ margin-right: 8px;
 /* Наші клієнти */
 
 .clients {
-    padding: 94px 215px;
+    padding: 94px 0;
     background: var(--primary-text-color);
 }
 
@@ -537,13 +536,15 @@ margin-right: 8px;
 }
 
 .clients-link {
-    border: 1pv solid var(--social-color);
+    border: 1px solid var(--social-color);
     border-radius: 4px;
     width: 100%;
     height: 100%;
     display: flex;
     justify-content: center;
+    justify-content: center;
     align-items: center;
+    color: var(--social-color);
 }
 
 .brends .item {
@@ -564,11 +565,21 @@ margin-right: 8px;
      color: var(--accent-color);
      border: 1px solid var(--accent-color);
 }
+.clients-link .icon{
+    fill: currentColor;
+}
 
 .clients-list:hover .icon,
 .clients-list:focus .icon{ 
     fill: currentColor;
 }
+
+.clients-list .clients-link:hover,
+.clients-list .clients-link:focus{
+    color: var(--accent-color);
+    border: 1px solid var(--accent-color);
+}
+
    
 .clients-list {    
     height: 92px;
@@ -604,7 +615,9 @@ margin-right: 8px;
 
 .logo-footer {
     text-decoration: none;
-    color: #FFFFFF
+    color: #FFFFFF;
+    display: block;
+    margin-bottom: 20px;
 }
 
 .all-contacts {
@@ -613,6 +626,9 @@ margin-right: 8px;
     padding-left: 0;
 }
 
+.contacts-item {
+    margin-bottom: 9px;
+}
 
 .adress .all-contacts {
     text-align: inherit;
